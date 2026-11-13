@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tu cesta de bienvenida · Alimentos de Guadalajara</title>
+<style>
+:root{--bg:#f4f4f4;--card:#ffffff;--ink:#161616;--muted:#5d5d5d;--green:#2b6d57;--red:#e8312a;--yellow:#d7a61d;--blue:#1b1fa8;--lime:#9bdc28;--line:#dcdcdc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--card:#1e2421;--ink:#f1f1f1;--muted:#b4b9b6;--line:#34403b;--green:#5fc79f}}
+:root[data-theme="dark"]{--bg:#141816;--card:#1e2421;--ink:#f1f1f1;--muted:#b4b9b6;--line:#34403b;--green:#5fc79f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Montserrat","Segoe UI",Arial,sans-serif;line-height:1.5}
+.wrap{max-width:640px;margin:0 auto;padding:20px 18px 60px}
+.tag{display:inline-block;background:var(--ink);color:var(--bg);font-size:12px;font-weight:800;letter-spacing:.08em;padding:5px 12px;border-radius:99px;text-transform:uppercase}
+h1{font-size:clamp(34px,9vw,52px);line-height:1.02;margin:14px 0 6px;color:var(--green);font-weight:900;text-transform:uppercase}
+.script{font-family:"Brush Script MT","Segoe Script",cursive;font-size:26px;color:var(--blue);margin:0 0 18px}
+@media (prefers-color-scheme:dark){.script{color:#9aa0ff}}
+.head{text-align:center}
+.hero{text-align:center;padding:4px 8px 24px;margin:4px 0 8px;border-bottom:2px dashed var(--line)}
+.hero p{margin:0 auto;max-width:470px;font-size:18px;color:var(--muted)}
+section{margin:26px 0}
+h2{font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:.02em;margin:0 0 12px;display:flex;align-items:center;gap:10px}
+h2 i{display:inline-block;width:26px;height:26px;border-radius:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px 18px;margin-bottom:10px}
+.row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.row b{font-size:16px}.row span{font-weight:800;color:var(--red)}
+.card small{display:block;color:var(--muted);font-size:14px}
+.video{background:#111;color:#fff;border-radius:20px;padding:26px 18px;text-align:center;margin-bottom:10px}
+.play{width:56px;height:56px;border-radius:50%;background:var(--red);margin:0 auto 10px;display:grid;place-items:center}
+.play:after{content:"";border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+.video small{opacity:.8}
+.mapbox{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:10px}
+svg{width:100%;height:auto;display:block}
+.pill{display:inline-block;font-size:13px;font-weight:700;padding:5px 12px;border-radius:99px;background:var(--lime);color:#111;margin:4px 6px 0 0}
+.stamp{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.stamp div{width:58px;height:58px;border:3px dashed var(--yellow);border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:800;color:var(--yellow);text-align:center;line-height:1.1}
+.cta{display:block;background:var(--red);color:#fff;text-align:center;text-decoration:none;font-weight:800;padding:16px;border-radius:99px;margin-top:14px}
+.note{font-size:12px;color:var(--muted);margin-top:28px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <span class="tag">Prototipo · QR de la cesta</span>
+    <h1>Bienvenido a Guadalajara</h1>
+    <p class="script">cada producto de tu cesta tiene una historia</p>
+  </div>
+
+  <div class="hero"><p>Aquí puedes conocer a quien hizo cada alimento, el pueblo donde nace y cómo disfrutarlo.</p></div>
+
+  <section>
+    <h2><i style="background:var(--red)"></i>Lo que hay en tu cesta</h2>
+    <div class="card"><div class="row"><b>Miel de romero</b><span>11,65 €</span></div><small>Señorío de Molina · Guadalajara</small></div>
+    <div class="card"><div class="row"><b>Queso tierno La Flor de Brihuega</b><span>17,65 €</span></div><small>Brihuega · La Alcarria</small></div>
+    <div class="card"><div class="row"><b>Chorizo de Atienza</b><span>3,05 €</span></div><small>Atienza · Sierra Norte</small></div>
+    <div class="card"><div class="row"><b>Cerveza Arriaca</b><span>2,15 €</span></div><small>Guadalajara capital</small></div>
+  </section>
+
+  <section>
+    <h2><i style="background:var(--yellow)"></i>Sus historias</h2>
+    <div class="video"><div class="play"></div><b>Quién hace tu miel</b><br><small>Vídeo de 1 minuto · próximamente</small></div>
+    <div class="video"><div class="play"></div><b>Cómo se elabora tu queso</b><br><small>Vídeo de 1 minuto · próximamente</small></div>
+  </section>
+
+  <section>
+    <h2><i style="background:var(--blue)"></i>De dónde viene</h2>
+    <div class="mapbox">
+      <svg viewBox="0 0 320 220" role="img" aria-label="Mapa esquemático con Atienza, Brihuega, Guadalajara y Molina de Aragón">
+        <path d="M60 30 L170 14 L262 40 L300 110 L270 190 L170 206 L82 176 L34 110 Z" fill="#e5efe9" stroke="#2b6d57" stroke-width="3"/>
+        <g font-family="Arial" font-size="13" font-weight="700" fill="#161616">
+          <circle cx="120" cy="52" r="9" fill="#e8312a"/><text x="136" y="57">Atienza</text>
+          <circle cx="170" cy="122" r="9" fill="#d7a61d"/><text x="186" y="127">Brihuega</text>
+          <circle cx="110" cy="150" r="9" fill="#1b1fa8"/><text x="126" y="168">Guadalajara</text>
+          <circle cx="238" cy="150" r="9" fill="#2a9d67"/><text x="190" y="190">Molina de Aragón</text>
+        </g>
+      </svg>
+    </div>
+    <p style="font-size:13px;color:var(--muted)">Mapa esquemático, no a escala.</p>
+  </section>
+
+  <section>
+    <h2><i style="background:var(--lime)"></i>Cómo disfrutarla</h2>
+    <div class="card"><b>Tostada de queso fresco con miel</b><small>Pan de hogaza, queso tierno, un hilo de miel de romero y unas nueces.</small></div>
+  </section>
+
+  <section>
+    <h2><i style="background:var(--green)"></i>Y ahora, ven a verlo</h2>
+    <div class="card"><b>Visitas y degustaciones</b><small>Pendientes de acuerdo con los productores participantes.</small>
+      <span class="pill">Apicultura</span><span class="pill">Quesería</span><span class="pill">Embutidos</span></div>
+    <div class="card"><b>Tu pasaporte alcarreño</b><small>Un sello por cada productor visitado.</small>
+      <div class="stamp"><div>MIEL</div><div>QUESO</div><div>CHORIZO</div><div>CERVEZA</div><div>+1</div></div></div>
+    <a class="cta" href="https://alimentosdeguadalajara.es/">Seguir descubriendo en la tienda</a>
+  </section>
+
+  <p class="note">Prototipo creado para la propuesta «Alimentos de Guadalajara: del clic al territorio». Contenido de ejemplo.</p>
+</div>
+</body>
+</html>
